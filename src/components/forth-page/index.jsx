@@ -1,31 +1,15 @@
 import { Container, Flexible } from "../../GlobalStyle";
-import { ForthPageBlock } from "./fortg-page-block";
-import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restaurant.jpg";
 import Bant from "../../assets/image/bant.png";
 import PHoto3 from "../../assets/image/photo3.jpg";
 import SaveTheDate from "../../assets/image/savethedate.png";
 import AttendanceGuests from "../AttendanceGuests";
+import { ForthPagePart } from "./styled";
 
 export const ForthPage = () => {
   return (
     <ForthPagePart>
       <Container>
-        <ForthPagePartContext>
-          <ForthPageBlock
-            ImageSrc={Church}
-            bigText={"Սուրբ Գևորգ եկեղեցի"}
-            mapSrc={
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.89020152337!2d44.3094668!3d40.1669983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a95df45ee7879%3A0x5edc387da55a163a!2z1Y3VuNaC1oDVoiDVgNW81avWg9W91avVtNWlINWl1a_VpdWy1aXWgdWr!5e0!3m2!1shy!2sam!4v1752148881848!5m2!1shy!2sam"
-            }
-          />
-          <ForthPageBlock
-            ImageSrc={Restaurant}
-            bigText={"Եվրոպա (Լենինգրադյան 29)"}
-            mapSrc={"https://maps.app.goo.gl/oufTUnqRtCSWSdXF6"}
-          />
-        </ForthPagePartContext>
 
         <div className="relative">
           <img src={PHoto3} alt="Photo 3" className="rounded-[15px]" />
@@ -59,7 +43,9 @@ export const ForthPage = () => {
           Խնդրում ենք կապվել մեզ հետ <br /> Ձեր ներկայությունը հաստատելու համար
           մինչև հունիսի 5-ը։
         </h3>
-        <h2 className="text-center font-[ArmAllegrou]">Սիրով՝ <br /> Գարիկ և Արուսիկ</h2>
+        <h2 className="text-center font-[ArmAllegrou]">
+          Սիրով ՝ <br /> Գարիկ և Արուսիկ
+        </h2>
       </Container>
     </ForthPagePart>
   );
