@@ -19,24 +19,24 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             imageSize={0}
             ImageSrc={null}
-            number={"13:00"}
+            number={"11:30"}
             bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="գ․ Մուսալեռ Տիգրան Մեծ 19/2"
+            smallText="Աշտարակ, Սմբատ Շահազիզի 42"
           />
           <ThirdPageBlock
             uniqueMargin={50}
             imageSize={147}
             ImageSrc={Haverjutyun}
-            number={"13:30"}
+            number={"13:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="ք․ Էջմիածին, Չարենց 4/37"
+            smallText="Մուղնի, 6 թղմ, տուն 10"
           />
           <ThirdPageBlock
             imageSize={114}
             ImageSrc={Church}
-            number={"14:30"}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Գայանե եկեղեցի"
+            smallText="Մուղնու Սուրբ Գևորգ եկեղեցի"
           />
           <ThirdPageBlock
             line={true}
@@ -44,7 +44,7 @@ export const ThirdPage = () => {
             imageSize={159}
             number={"17:30"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Նոր Դվին Ռեստորան"
+            smallText="Felice ռեստորան Երևան, Բագրևանդ 110"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>
