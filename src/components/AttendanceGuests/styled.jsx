@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   /* width: 100%; */
   /* max-width: 390px; */
   /* box-sizing: border-box; */
-  /* overflow: hidden; */
+  overflow: hidden;
   /* padding: 16px; */
 `;
 

@@ -7,12 +7,6 @@ const WeddingInvitationEnvelope = ({ onOpen }) => {
   const bottomControls = useAnimation();
   const sealControls = useAnimation();
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
 
   const handleOpen = async () => {
     if (!isOpened) {

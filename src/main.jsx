@@ -4,10 +4,12 @@ import App from "./App.jsx";
 import { GlobalStyle } from "./GlobalStyle.jsx";
 import "./index.css";
 import { preloadFonts } from "./fontLoader.js";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import WeddingInvitationEnvelope from "./components/wedding-invitation/index.jsx";
 
 preloadFonts();
+
+
 const Main = () => {
   const [isOpened, setIsOpened] = useState(false);
 
