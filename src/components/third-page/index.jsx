@@ -17,13 +17,6 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            imageSize={0}
-            ImageSrc={null}
-            number={"11:30"}
-            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="Աշտարակ, Սմբատ Շահազիզի 42"
-          />
-          <ThirdPageBlock
             uniqueMargin={50}
             imageSize={147}
             ImageSrc={Haverjutyun}
@@ -36,7 +29,7 @@ export const ThirdPage = () => {
             ImageSrc={Church}
             number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Մուղնու Սուրբ Գևորգ եկեղեցի"
+            smallText="Արտաշատի Սուրբ Հովհաննես եկեղեցի"
           />
           <ThirdPageBlock
             line={true}
@@ -44,7 +37,7 @@ export const ThirdPage = () => {
             imageSize={159}
             number={"17:30"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Felice ռեստորան Երևան, Բագրևանդ 110"
+            smallText="Ադանա Ռեստորան"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>

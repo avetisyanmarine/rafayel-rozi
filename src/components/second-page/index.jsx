@@ -5,7 +5,7 @@ import Photo2 from "../../assets/image/examp.jpg";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 4, 30, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 14, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -79,7 +79,7 @@ export const SecondPage = () => {
           </GridDiv>
         </div>
         <h2 className="mt-10" data-aos="zoom-in" data-aos-offset="400">
-          Մայիս
+          Հունիս
         </h2>
         <ThirdPagePartCalendar
           data-aos="fade-up"
@@ -97,8 +97,8 @@ export const SecondPage = () => {
             </div>
           ))}
           {[...Array(37)].map((_, i) =>
-            i > 3 && i <= 34 ? (
-              <div className={i - 5 == 28 ? "special" : ""}>{i - 3}</div>
+            i > -1 && i <= 29 ? (
+              <div className={i - 5 == 8 ? "special" : ""}>{i - -1}</div>
             ) : (
               <div className=""></div>
             ),
@@ -121,7 +121,7 @@ export const SecondPage = () => {
       </div>
       <img
         src={Photo2}
-        className="w-full"
+        className="w-full grayscale"
       />
     </SecondPagePart>
   );

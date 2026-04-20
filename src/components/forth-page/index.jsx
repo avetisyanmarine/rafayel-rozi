@@ -33,12 +33,13 @@ export const ForthPage = () => {
           style={{
             fontFamily: "SaveTheDate", // Այստեղ համոզվեք, որ տառատեսակի անունը ճիշտ է
             textAlign: "center",
-            color: "#1e1e1e",
+            color: "#ffff",
+            textShadow: "2px 2px 6px rgba(0,0,0,0.7)",
             fontSize: "2rem", // սա text-4xl-ն է
             fontWeight: "600", // սա font-bold-ն է
             marginTop: "2.5rem", // սա mt-10-ն է
             position: "absolute", // սա absolute-ն է
-            top: "-36px",
+            top: "-80px",
             left: "50%",
             transform: "translateX(-50%)", // սա -translate-x-1/2-ն է
           }}
