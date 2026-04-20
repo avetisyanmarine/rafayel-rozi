@@ -1,17 +1,18 @@
-import { useEffect } from "react"
-import { FirstPage } from "./components/first-page"
-import { ForthPage } from "./components/forth-page"
-import { LastFooterPage } from "./components/last-footer-page"
-import { MusicPage } from "./components/music-page"
-import { SecondPage } from "./components/second-page"
-import { ThirdPage } from "./components/third-page"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { BackToTop } from "./components/top-button"
+import { useEffect } from "react";
+import { FirstPage } from "./components/first-page";
+import { ForthPage } from "./components/forth-page";
+import { LastFooterPage } from "./components/last-footer-page";
+import { MusicPage } from "./components/music-page";
+import { SecondPage } from "./components/second-page";
+import { ThirdPage } from "./components/third-page";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { BackToTop } from "./components/top-button";
+import WeddingInvitationEnvelope from "./components/wedding-invitation";
 
 function App() {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+   useEffect(() => {
+    AOS.init({ duration: 2000, once: true, easing: "ease-in-out" });
   }, []);
 
   return (
@@ -24,7 +25,7 @@ function App() {
       <LastFooterPage />
       {/* <BackToTop /> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
