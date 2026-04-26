@@ -20,11 +20,13 @@ const ThirdPagePartContext = styled.div`
 const ThirdPagePartMini = styled.div`
   text-align: center;
   h3 {
-    font-family: ArmAllegrou;
     letter-spacing: 3px;
     font-weight: 400;
     font-size: 31px;
-    margin: 30px 0;
+    margin: 20px 0;
+  }
+  .dzev {
+    font-family: ArmAllegrou;
   }
   hr {
     width: 195px;

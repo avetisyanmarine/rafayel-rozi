@@ -10,13 +10,19 @@ export const SecondPage = () => {
         <SecondPagePartContext>
           <div>
             <img loading="lazy" src={Sign} alt="Sign" />
-            <h4  data-aos="fade-left">
-              Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր կյանքի կարևոր և հիշարժան օրվան։
+            <h4 data-aos="fade-left">
+              Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր կյանքի կարևոր և հիշարժան
+              օրվան։
             </h4>
           </div>
         </SecondPagePartContext>
-        <img  data-aos="fade-right" src={Photo1} alt="Photo 1" className="rounded-[15px]" />
-        <h2>26.06.2026</h2>
+        <img
+          data-aos="fade-right"
+          src={Photo1}
+          alt="Photo 1"
+          className="rounded-[15px]"
+        />
+        <h2>04.07.2026</h2>
       </Container>
     </SecondPagePart>
   );
