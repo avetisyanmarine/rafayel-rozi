@@ -6,13 +6,14 @@ import {
 } from "./styled";
 import { Container } from "../../GlobalStyle";
 import SvgChurch from "../../assets/vectors/church.png";
-import Church from "../../assets/image/church.jpg";
-import Restaurant from "../../assets/image/restaurant.png";
+import Church from "../../assets/image/church.avif";
+import Restaurant from "../../assets/image/restoran.jpg";
+import SvgRing from "../../assets/vectors/ring.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import SerLiqySer from "../../assets/image/serliqyser.png";
-import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
-import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
-import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
+import PhotoGroup1 from "../../assets/image/groupphoto1.JPG";
+import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
+import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
 import { ThirdPageBlock } from "./third-page-block";
@@ -24,36 +25,46 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
-            uniqueMargin={50}
+            // uniqueMargin={50}
+            className="uniqueone"
+            ImageSrc={SvgRing}
+            number={"11:00"}
+            bigText="ՀԱՐՍԻ ՏՈՒՆ"
+            smallText="ք.Սևան , Շահումյան 10ա"
+          />
+          <ThirdPageBlock
             ImageSrc={SvgChurch}
-            number={"14:30"}
+            number={"15:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Սուրբ Հռիփսիմե եկեղեցի"
+            smallText="Սուրբ Գրիգոր Լուսավորիչ"
           />
 
           <ThirdPageBlock
             className="secondBlock"
-            uniqueMargin={100}
+            // uniqueMargin={100}
             line={true}
             ImageSrc={SvgCouple}
             number={"17:30"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Արև Հանդիսությունների Սրահ"
+            smallText="Հրաշք Այգի ռեստորան"
           />
         </ThirdPagePartContext>
         <ForthPagePartContext>
           <ForthPageBlock
             ImageSrc={Church}
-            bigText={"Սուրբ Հռիփսիմե եկեղեցի"}
-            mapSrc={"https://maps.app.goo.gl/gzUZACnnjxVvF93s5"}
+            bigText={"Սուրբ Գրիգոր Լուսավորիչ"}
+            mapSrc={"https://maps.app.goo.gl/xC2iH7GaFDXZNsh89"}
           />
           <ForthPageBlock
             ImageSrc={Restaurant}
-            bigText={"Արև Հանդիսությունների Սրահ"}
-            mapSrc={"https://maps.app.goo.gl/K1sC7RjCT9bhTLCv5"}
+            bigText={"Հրաշք Այգի ռեստորան"}
+            mapSrc={"https://maps.app.goo.gl/mNLpjba1TgPTbT3y7"}
           />
         </ForthPagePartContext>
-        <div className="flex h-[100vh] gap-[20px] justify-around" style={{marginTop: "70px"}}>
+        <div
+          className="flex h-[100vh] gap-[20px] justify-around"
+          style={{ marginTop: "70px" }}
+        >
           <div>
             <img src={SerLiqySer} className="h-[100vh] w-full" />
           </div>
@@ -81,12 +92,12 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հուլիս</h3>
+          <h3>Հունիս</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
           {[...Array(35)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i - 1 == 2 ? "special" : ""}>{i + 1}</div>
+              <div className={i - 1 == 17 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div></div>
             ),

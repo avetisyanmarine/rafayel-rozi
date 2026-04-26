@@ -41,6 +41,8 @@ const FirstPagePartContext = styled.div`
         }
         .uniqueH1 {
             line-height: 0;
+            letter-spacing: -8px;
+            margin-right: 50px;
         }
         p {
             color: #957b70;

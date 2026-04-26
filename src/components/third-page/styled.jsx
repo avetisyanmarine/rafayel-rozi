@@ -10,6 +10,9 @@ const ThirdPagePart = styled.div`
     margin-top: 50px;
     width: 100%;
   }
+   .uniqueone{
+    margin-top: 40px;
+  }
 `;
 const ThirdPagePartContext = styled.div`
   overflow: hidden;

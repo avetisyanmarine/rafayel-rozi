@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   /* width: 100%; */
   /* max-width: 390px; */
   /* box-sizing: border-box; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding: 16px; */
 `;
 
@@ -14,14 +14,14 @@ const Header = styled.div`
   margin-bottom: 20px;
 
   h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
   p {
     color: #9ca3af;
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 20px;
   }
 `;
 
@@ -60,7 +60,7 @@ const MessageBox = styled.div`
 `;
 
 const MessageIcon = styled.span`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   padding-top: 2px;
   ${(props) =>
@@ -72,7 +72,7 @@ const MessageContent = styled.div`
 
   p {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
   }
 `;
 
@@ -86,18 +86,18 @@ const FormGroup = styled.div``;
 
 const Label = styled.label`
   display: block;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   color: #1f2937;
   margin-bottom: 8px;
 
   @media (min-width: 640px) {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -107,7 +107,7 @@ const Label = styled.label`
 const Input = styled.input`
   width: 100%;
   padding: 10px 12px;
-  font-size: 14px;
+  font-size: 18px;
   color: #1f2937;
   background-color: white;
   border: 2px solid #e5e7eb;
@@ -131,7 +131,7 @@ const Input = styled.input`
 
   @media (min-width: 640px) {
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 12px;
   }
 `;
@@ -156,7 +156,7 @@ const OptionButton = styled.button`
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
-  font-size: 12px;
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +167,7 @@ const OptionButton = styled.button`
 
   @media (min-width: 640px) {
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 12px;
     gap: 12px;
   }
@@ -228,7 +228,7 @@ const GuestCountContainer = styled.div`
 const GuestCountInput = styled(Input)``;
 
 const GuestCountHint = styled.p`
-  font-size: 12px;
+  font-size: 18px;
   color: #6b7280;
   margin-top: 6px;
 
@@ -240,7 +240,7 @@ const GuestCountHint = styled.p`
 const TextArea = styled.textarea`
   width: 100%;
   padding: 10px 12px;
-  font-size: 14px;
+  font-size: 18px;
   color: #1f2937;
   background-color: white;
   border: 2px solid #e5e7eb;
@@ -276,7 +276,7 @@ const SubmitButton = styled.button`
   background-color: #3d3a3a;
   color: white;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   border-radius: 8px;
   box-shadow: 0 10px 15px -3px rgba(107, 114, 128, 0.3);
   transition: all 0.3s ease;
@@ -342,11 +342,11 @@ const FooterText = styled.p`
   text-align: center;
   padding-top: 12px;
   border-top: 1px solid #e5e7eb;
-  font-size: 12px;
+  font-size: 18px;
 
   @media (min-width: 640px) {
     padding-top: 16px;
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
 
@@ -375,7 +375,7 @@ const OptionLabelMobile = styled.span`
     display: none;
   }
 
-  font-size: 12px;
+  font-size: 16px;
 `;
 
 export {

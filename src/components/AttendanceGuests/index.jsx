@@ -38,7 +38,8 @@ const AttendanceGuests = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: name === "guestCount" ? Math.max(0, parseInt(nvalue) || 0) : value,
+      [name]:
+        name === "guestCount" ? Math.max(0, parseInt(value) || 0) : value,
     }));
   };
 
@@ -96,7 +97,7 @@ const AttendanceGuests = () => {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbzWXFbe65WbaIY0SnPRv8tJqKUSFB2TOvlFpnBIvsN11PjQ6T_7HZq6yDNJBSfJ3FT5Cg/exec",
+        "https://script.google.com/macros/s/AKfycbwy3aY20SkJOoBjBmCacmnYS4ziZqJvmViSa0MaUwxXpKjbbGz2VmsT4LCy5_MMRM2FyA/exec",
         {
           method: "POST",
           mode: "no-cors",
@@ -179,7 +180,7 @@ const AttendanceGuests = () => {
         {/* Family Side */}
         <FormGroup>
           <Label>
-            <h4>Ո՞ր կողմից եք բարեկամ*</h4>
+            <h4>Ու՞մ կողմից եք հրավիրված*</h4>
           </Label>
           <OptionGrid>
             {[
@@ -194,7 +195,9 @@ const AttendanceGuests = () => {
               >
                 <OptionIcon>{option.icon}</OptionIcon>
                 <OptionLabel>{option.label}</OptionLabel>
-                <OptionLabelMobile>{option.label.split(",")[0]}</OptionLabelMobile>
+                <OptionLabelMobile>
+                  {option.label.split(",")[0]}
+                </OptionLabelMobile>
               </OptionButton>
             ))}
           </OptionGrid>
@@ -218,7 +221,9 @@ const AttendanceGuests = () => {
               >
                 <OptionIcon>{option.icon}</OptionIcon>
                 <OptionLabel>{option.label}</OptionLabel>
-                <OptionLabelMobile>{option.label.split(",")[0]}</OptionLabelMobile>
+                <OptionLabelMobile>
+                  {option.label.split(",")[0]}
+                </OptionLabelMobile>
               </OptionButton>
             ))}
           </OptionGrid>
@@ -244,25 +249,6 @@ const AttendanceGuests = () => {
           </GuestCountContainer>
         )}
 
-        {/* Comment Textarea */}
-        <FormGroup>
-          <Label htmlFor="comment">
-            <h4>
-              <span>💬</span>
-              Մեկնաբանություն (ընտրովի)
-            </h4>
-          </Label>
-          <TextArea
-            id="comment"
-            name="comment"
-            value={formData.comment}
-            onChange={handleInputChange}
-            placeholder="Եթե ունեք մեկնաբանություններ կամ հատուկ պահանջներ, գրեք այստեղ։"
-            rows="3"
-          />
-        </FormGroup>
-
-        {/* Submit Button */}
         <SubmitButton type="submit" disabled={isSubmitting}>
           {isSubmitting ? (
             <>
