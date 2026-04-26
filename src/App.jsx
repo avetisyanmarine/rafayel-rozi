@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FirstPage } from "./components/first-page";
 import { ForthPage } from "./components/forth-page";
 import { LastFooterPage } from "./components/last-footer-page";
@@ -10,14 +10,14 @@ import "aos/dist/aos.css";
 import { BackToTop } from "./components/top-button";
 import WeddingInvitationEnvelope from "./components/wedding-invitation";
 
-function App() {
-   useEffect(() => {
+function App ({isOpened}) {
+  useEffect(() => {
     AOS.init({ duration: 2000, once: true, easing: "ease-in-out" });
   }, []);
 
   return (
     <>
-      <MusicPage />
+      <MusicPage isPlaying={isOpened} />
       <FirstPage />
       <SecondPage />
       <ThirdPage />

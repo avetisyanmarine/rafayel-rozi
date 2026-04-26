@@ -29,7 +29,7 @@ const Main = () => {
   return (
     <>
       <GlobalStyle />
-      <App />
+      <App isOpened={isOpened} />
       <AnimatePresence>
         {!isOpened && (
           <WeddingInvitationEnvelope onOpen={() => setIsOpened(true)} />

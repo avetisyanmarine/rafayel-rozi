@@ -26,7 +26,7 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             uniqueMargin={50}
             ImageSrc={SvgChurch}
-            number={"14:40"}
+            number={"14:30"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
             smallText="Սուրբ Հռիփսիմե եկեղեցի"
           />
@@ -81,7 +81,7 @@ export const ThirdPage = () => {
           <h3 className="dzev">Սիրով սպասում ենք</h3>
           <hr />
           <h3 className="dzev">Պահպանիր Օրը</h3>
-          <h3>Հունիս</h3>
+          <h3>Հուլիս</h3>
         </ThirdPagePartMini>
         <ThirdPagePartCalendar>
           {[...Array(35)].map((_, i) =>
