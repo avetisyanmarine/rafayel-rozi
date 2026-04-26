@@ -7,7 +7,7 @@ export const ForthPageBlock = ({ ImageSrc, bigText, mapSrc }) => {
         <img
           loading="lazy"
           data-aos="fade-right"
-          className="grayscale rounded-[15px]"
+          className="rounded-[15px]"
           src={ImageSrc}
         />
         <a

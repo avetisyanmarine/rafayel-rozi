@@ -11,7 +11,7 @@ export const ForthPage = () => {
     <ForthPagePart>
       <Container>
         <div className="relative">
-          <img src={PHoto3} alt="Photo 3"className="rounded-[15px] grayscale" />
+          <img src={PHoto3} alt="Photo 3"className="rounded-[15px]" />
           <img
             className="absolute top-1.5 left-1.5 w-[130px]"
             src={SaveTheDate}
