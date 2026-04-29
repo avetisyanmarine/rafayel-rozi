@@ -11,6 +11,7 @@ const FirstPagePart = styled.div`
   img {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     object-fit: cover;
     filter: blur(1.5px), grayscale(1);
   }
@@ -42,6 +43,22 @@ const FirstPagePartContext = styled.div`
     .uniqueH1 {
       line-height: 0;
       margin-right: 50px;
+=======
+    h2 {
+        text-align: center;
+        font-family: ArmAllegrou;
+        font-weight: 800;
+        line-height: 35px;
+        letter-spacing: 3px;
+    }
+    img {
+        width: 137px;
+        height: 97px;
+    }
+    .uniqueH2 {
+        font-family: ArmenianDecorativeU-Italic;
+        margin-bottom: 28px;
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
     }
     p {
       color: #957b70;
@@ -49,6 +66,7 @@ const FirstPagePartContext = styled.div`
       font-weight: 400;
       margin-top: -64px;
     }
+<<<<<<< HEAD
   }
 `;
 const GridDiv = styled(Flexible)`
@@ -73,3 +91,7 @@ const GridDiv = styled(Flexible)`
   }
 `;
 export { FirstPagePart, FirstPagePartContext, GridDiv };
+=======
+`
+export { FirstPagePart, FirstPagePartContext }
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77

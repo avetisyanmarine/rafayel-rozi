@@ -3,7 +3,10 @@ import styled from "styled-components";
 const LastFooterPagePart = styled.div`
     color: #efefef;
     text-align: center;
+<<<<<<< HEAD
     padding: 20px 0;
+=======
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
 `
 const LastFooterPagePartContext = styled.div`
     font-size: 22px;

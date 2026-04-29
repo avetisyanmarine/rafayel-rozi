@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
@@ -6,9 +7,20 @@ import "./index.css";
 import { preloadFonts } from "./fontLoader.js";
 import { AnimatePresence, motion } from "framer-motion";
 import WeddingInvitationEnvelope from "./components/wedding-invitation/index.jsx";
+=======
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import { GlobalStyle } from './GlobalStyle.jsx'
+import './index.css';
+import { preloadFonts } from './fontLoader.js';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
 
 preloadFonts();
 
+<<<<<<< HEAD
 const Main = () => {
   const [isOpened, setIsOpened] = useState(false);
   useEffect(() => {
@@ -40,6 +52,16 @@ const Main = () => {
 };
 
 createRoot(document.getElementById("root")).render(
+=======
+AOS.init({
+  duration: 1000,
+  offset: 400,
+  once: true,
+  easing: 'ease-out-cubic',
+})
+
+createRoot(document.getElementById('root')).render(
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
   <StrictMode>
     <Main />
   </StrictMode>,

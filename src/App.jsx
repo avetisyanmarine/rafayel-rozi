@@ -12,7 +12,12 @@ import WeddingInvitationEnvelope from "./components/wedding-invitation";
 
 function App ({isOpened}) {
   useEffect(() => {
+<<<<<<< HEAD
     AOS.init({ duration: 2000, once: true, easing: "ease-in-out" });
+=======
+    AOS.init({ duration: 700, once: true });
+
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
   }, []);
 
   return (

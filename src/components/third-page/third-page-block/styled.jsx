@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Flexible } from "../../../GlobalStyle";
 
 export const ThirdPageBlockPart = styled(Flexible)`
+<<<<<<< HEAD
   justify-content: start;
   gap: 40px;
   margin-top: 120px;
@@ -30,6 +31,19 @@ export const ThirdPageBlockPartSvg = styled.div`
       }
     `}
 `;
+=======
+    flex-direction: column;
+    gap: 40px;
+`
+export const ThirdPageBlockPartSvg = styled.div`
+    position: relative; 
+    img {
+      
+        max-width: none;
+    }
+
+`
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
 export const ThirdPageBlockPartContext = styled.div`
   display: flex;
   flex-direction: column;

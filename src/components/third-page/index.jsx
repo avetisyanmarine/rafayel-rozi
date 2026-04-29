@@ -5,6 +5,7 @@ import {
   ThirdPagePartMini,
 } from "./styled";
 import { Container } from "../../GlobalStyle";
+<<<<<<< HEAD
 import SvgChurch from "../../assets/vectors/church.png";
 import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restoran.jpg";
@@ -12,6 +13,11 @@ import SvgRing from "../../assets/vectors/ring.png";
 import SvgCouple from "../../assets/vectors/cup.png";
 import { ForthPagePartContext, ForthPagePart } from "../forth-page/styled";
 import { ForthPageBlock } from "../forth-page/fortg-page-block";
+=======
+import Haverjutyun from "../../assets/image/haverjutyun.png";
+import Church from "../../assets/image/church.png";
+import Kenac from "../../assets/image/kenac.png";
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
 import { ThirdPageBlock } from "./third-page-block";
 
 export const ThirdPage = () => {
@@ -21,6 +27,7 @@ export const ThirdPage = () => {
         <h2>Ծրագիր</h2>
         <ThirdPagePartContext>
           <ThirdPageBlock
+<<<<<<< HEAD
             // uniqueMargin={50}
             className="uniqueone"
             ImageSrc={SvgRing}
@@ -77,6 +84,35 @@ export const ThirdPage = () => {
             ),
           )}
         </ThirdPagePartCalendar>
+=======
+            uniqueMargin={50}
+            imageSize={147}
+            ImageSrc={Haverjutyun}
+            number={"13:00"}
+            bigText="ՀԱՐՍԻ ՏՈՒՆ"
+            smallText="Մուղնի, 6 թղմ, տուն 10"
+          />
+          <ThirdPageBlock
+            imageSize={114}
+            ImageSrc={Church}
+            number={"14:00"}
+            bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
+            smallText="Արտաշատի Սուրբ Հովհաննես եկեղեցի"
+          />
+          <ThirdPageBlock
+            line={true}
+            ImageSrc={Kenac}
+            imageSize={159}
+            number={"17:30"}
+            bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
+            smallText="Ադանա Ռեստորան"
+          />
+        </ThirdPagePartContext>
+        <ThirdPagePartMini>
+          <h3>Սիրով սպասում ենք</h3>
+          <hr />
+        </ThirdPagePartMini>
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
       </Container>
     </ThirdPagePart>
   );

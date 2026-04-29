@@ -1,10 +1,16 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+  padding: 0;
+  font-family: ArmenianDecorativeU-Italic;
+  color: #1E1E1E;
+}
+* {
     box-sizing: border-box;
+<<<<<<< HEAD
   }
   html, body {
   max-width: 100%;
@@ -12,8 +18,9 @@ const GlobalStyle = createGlobalStyle`
 }
   body {
     font-family: DavelAghvor;
+=======
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
     letter-spacing: 1px;
-    background-color: #F3F3F3;
   }
   @font-face {
     font-family: 'ArmAllegrou';
@@ -21,8 +28,13 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
   }
   @font-face {
-    font-family: "DavelAghvor";
-    src: url("/font/davel-aghvor.otf");
+    font-family: 'SaveTheDate';
+    src: url("/font/WhiteAngelica.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ArmenianDecorativeU-Italic";
+    src: url("/font/ArmenianDecorativeU-Italic.ttf");
     font-display: swap;
   }
   h3 {
@@ -33,11 +45,19 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 100;
   }
   h1 {
+<<<<<<< HEAD
     font-size: 100px;
     font-family: ArmAllegrou;
     color: #fefefe;
     font-weight: 400;
     text-shadow: rgba(0, 0, 0, 0.7) 2px 2px 6px;  }
+=======
+    font-size: 42px;
+    font-family: ArmAllegrou;
+    color: #EFEFEF;
+    font-weight: 100;
+  }
+>>>>>>> fbb79a48ee4533207568b5b525ff59256600cf77
 `;
 const Container = styled.div`
   max-width: 390px;
